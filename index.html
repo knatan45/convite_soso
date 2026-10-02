@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Uma pergunta pra você</title>
+  <meta name="description" content="Eu podia ter mandado mensagem. Mas não.">
+  <meta name="theme-color" content="#2a0a12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300;1,9..144,400&family=Caveat:wght@500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. ABERTURA -->
+  <section class="opening">
+    <p class="kicker reveal">pra você, de mim</p>
+    <h1 class="reveal">Oi.</h1>
+    <p class="lead reveal">Tenho uma pergunta.<br>Mas antes você vai ter que rolar um pouquinho kkkk.</p>
+    <span class="scroll-hint" aria-hidden="true">↓</span>
+  </section>
+
+  <!-- 2. CONFISSÃO -->
+  <section class="confession paper">
+    <div class="wrap">
+      <p class="label reveal">uma confissão</p>
+      <h2 class="reveal">Eu podia ter só te mandado uma mensagem.</h2>
+
+      <div class="chat reveal" aria-label="mensagem que nunca foi enviada">
+        <div class="bubble"><span id="typing"></span><span class="caret">|</span></div>
+        <span class="chat-note">apagada umas 7 vezes</span>
+      </div>
+
+      <p class="reveal">Ia levar uns quatro segundos. Mas toda vez que eu escrevia parecia muito simples só escrever.</p>
+      <p class="reveal">Então eu fiz o que qualquer pessoa anormal faria: abri o editor de código e fiz um site kkkk</p>
+      <p class="handwritten reveal">não me julga. ou julga, mas só depois do date.</p>
+    </div>
+  </section>
+
+  <!-- 3. O CONVITE -->
+  <section class="invite">
+    <div class="wrap">
+      <p class="label light reveal">enfim, a pergunta</p>
+      <h2 class="big reveal">Você quer sair <em>comigo</em>?</h2>
+      <p class="reveal soft">Só eu, você, uma conversa boa e provavelmente alguma comida.</p>
+    </div>
+  </section>
+
+  <!-- 4. DATA E HORÁRIO -->
+  <section class="details paper">
+    <div class="wrap">
+      <div class="ticket reveal">
+        <div class="ticket-row">
+          <span class="label">quando</span>
+          <strong class="date" id="event-date">05.10.2026</strong>
+          <span class="weekday">uma segunda-feira, pra começar bem a semana</span>
+        </div>
+        <div class="ticket-cut" aria-hidden="true"></div>
+        <div class="ticket-row">
+          <span class="label">horário</span>
+          <strong class="time">Passo te buscar às 20:10</strong>
+          <span class="weekday">20:00 parecia ansioso demais. 20:30 parecia que eu não tava ansioso. E eu tô kkkk.</span>
+        </div>
+      </div>
+
+      <div class="countdown reveal" aria-live="polite">
+        <p class="label">faltam</p>
+        <div class="count" id="countdown">
+          <div><b data-unit="d">00</b><small>dias</small></div>
+          <div><b data-unit="h">00</b><small>horas</small></div>
+          <div><b data-unit="m">00</b><small>min</small></div>
+          <div><b data-unit="s">00</b><small>seg</small></div>
+        </div>
+        <p class="handwritten small" id="countdown-note">e eu contando cada um deles</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. LOCAL -->
+  <section class="place">
+    <div class="wrap">
+      <p class="label light reveal">onde</p>
+      <h2 class="reveal">Local: <button class="redacted" id="redacted" aria-label="Revelar o local">confidencial</button></h2>
+      <p class="place-answer reveal" id="place-answer">Toca na tarja preta. Vai, eu sei que você é curiosa.</p>
+      <p class="tiny reveal">Prometo revelar antes das 20:10. Ou na hora, se eu conseguir guardar segredo (não vou kkk).</p>
+    </div>
+  </section>
+
+  <!-- 6. SOBRE O DATE -->
+  <section class="about paper">
+    <div class="wrap">
+      <p class="label reveal">o que eu já sei sobre esse date</p>
+      <ol class="facts">
+        <li class="reveal"><span>01</span>Vou chegar umas 20:05 e ficar no carro fingindo que acabei de chegar.</li>
+        <li class="reveal"><span>02</span>Vou estar nervoso. Se eu falar demais, é isso. Se eu ficar quieto, também é isso.</li>
+        <li class="reveal"><span>03</span>A conversa eu garanto. O resto a gente descobre junto.</li>
+              </ol>
+    </div>
+  </section>
+
+  <!-- 7. TERMOS E CONDIÇÕES + BEIJO -->
+  <section class="terms">
+    <div class="wrap">
+      <p class="label light reveal">antes de aceitar</p>
+      <h2 class="reveal">Termos e condições</h2>
+      <p class="tiny reveal">(sim, eu fiz isso)</p>
+
+      <ol class="clauses reveal">
+        <li>O date acontece dia 05/10. Remarcar só com atestado médico ou chuva de granizo kkkkk.</li>
+
+        <li>A conta é minha. Qualquer tentativa de dividir será ignorada com um sorriso educado.</li>
+        <li>O beijo <strong>não</strong> está incluso no pacote. Só acontece se nós dois quisermos.</li>
+        <li>Dito isso, confesso que a cláusula 4 foi escrita com segundas intenções kkkkk.</li>
+             </ol>
+
+      <div class="forecast reveal">
+        <p class="label light">previsão para 05/10, 20:10</p>
+        <div class="forecast-grid">
+          <div><small>céu</small><b>limpo</b></div>
+          <div><small>nervosismo</small><b>alto</b></div>
+          <div><small>chance de beijo</small><b id="kiss-chance">?</b></div>
+        </div>
+        <button class="link-btn" id="kiss-btn">calcular chance de beijo</button>
+      </div>
+
+      <label class="agree reveal">
+        <input type="checkbox" id="agree">
+        <span>Li e concordo. (mesmo sem ter lido, eu sei)</span>
+      </label>
+    </div>
+  </section>
+
+  <!-- 8. FINAL -->
+  <section class="final paper" id="final">
+    <div class="wrap center">
+      <p class="label reveal">então</p>
+      <h2 class="big dark reveal">E aí, topa?</h2>
+      <div class="actions reveal">
+        <button class="btn-yes" id="btn-yes">Topo, passa às 20:10 ❤</button>
+        <button class="btn-maybe" id="btn-maybe">Vou pensar</button>
+      </div>
+      <p class="tiny dark" id="maybe-note"></p>
+    </div>
+  </section>
+
+  <!-- TELA DE ACEITE -->
+  <div class="accepted" id="accepted" aria-hidden="true">
+    <canvas id="hearts"></canvas>
+    <div class="accepted-content">
+      <p class="label light">combinado</p>
+      <h2>Ok. Eu tô sorrindo igual bobo agora.</h2>
+      <p>Dia 05, 20:10, eu tô aí na frente. Pode ir do jeito que você quiser que vai estar perfeito.</p>
+
+    </div>
+  </div>
+
+  <footer class="paper">
+    <p>feito à mão, com café e um pouco de coragem.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
